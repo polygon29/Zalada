@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pics",
+  "info": {
+    "singularName": "pic",
+    "pluralName": "pics",
+    "displayName": "Pic"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PicURL": {
+      "type": "string"
+    }
+  }
+}

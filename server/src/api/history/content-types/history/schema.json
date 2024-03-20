@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "histories",
+  "info": {
+    "singularName": "history",
+    "pluralName": "histories",
+    "displayName": "History",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "OrderTime": {
+      "type": "datetime"
+    },
+    "history_owner": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "histories"
+    },
+    "status": {
+      "type": "string"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "histories"
+    },
+    "history_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::history-item.history-item",
+      "mappedBy": "history"
+    },
+    "Owner": {
+      "type": "string"
+    },
+    "slip": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": false
+    }
+  }
+}

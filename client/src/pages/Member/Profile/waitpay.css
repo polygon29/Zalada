@@ -1,0 +1,43 @@
+.Wmaincon {
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* กำหนดขนาดของ container ให้เท่ากัน */
+  grid-gap: 20px; /* ระยะห่างระหว่าง container */
+  width: 95%;
+}
+
+.Wcard {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  min-height: 300px;
+  max-width:51%; 
+  margin-bottom: 20px;
+}
+
+.Wcard-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.Wcard-img {
+  border-radius: 0.25rem;
+}
+
+.Whr {
+  border: none;
+  border-top: 1px solid #e9ecef;
+  margin: 1rem 0;
+}
+
+.waitpay {
+  padding: 20px;
+  background: linear-gradient(to bottom right, #363b00, #103b74, #1069a2, #3d078b);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}

@@ -1,0 +1,16 @@
+.main-notify {
+  padding: 20px;
+  background: linear-gradient(to bottom right, #363b00, #103b74, #1069a2, #3d078b);
+  background-attachment: scroll; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh; 
+  }
+  
+h3 {
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  margin: auto; 
+}

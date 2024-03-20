@@ -1,0 +1,37 @@
+.main {
+    height: 480px;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(to bottom right, #363b00, #103b74, #1069a2, #3d078b)
+  }
+  
+h3 {
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  margin: auto; 
+}
+
+.zalada {
+    font-weight: bold;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(242, 255, 0);
+    text-decoration: none;
+    
+}
+
+.carousel {
+  max-width: 600px; /* ปรับขนาดของ Carousel ตามต้องการ */
+  margin: auto; /* จัดการยืดขยายตามขนาดของ container */
+}
+
+  @media screen and (min-width: 768px) {
+
+  }
+  
+
+  @media screen and (max-width: 767px) {
+
+  }

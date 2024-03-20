@@ -1,0 +1,80 @@
+.order-confirmation-container {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .bg {
+    height: 1000px;
+    padding: 10px;
+    background: linear-gradient(to bottom right, #363b00, #103b74, #1069a2, #3d078b)
+  }
+  
+  .title {
+    color: #446cb3;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  .message {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .code {
+    font-weight: bold;
+  }
+  
+  .qr-code {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .bn31 {
+    background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #00a84f;
+    display: block;
+    text-align: center;
+    height: 43px;
+    font-size: 1.4em;
+    padding: 4px;
+    position: relative;
+    text-decoration: none;
+    width: 7em;
+    z-index: 2;
+  }
+  
+  .bn31:hover {
+    color: #fff;
+  }
+  
+  .bn31 .bn31span {
+    align-items: center;
+    background: #ffffff;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+  }
+  
+  .bn31:hover .bn31span {
+    background: transparent;
+  }
+
+  .black-text {
+    color: black;
+}

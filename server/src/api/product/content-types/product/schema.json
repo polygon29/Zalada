@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": false
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "quantity": {
+      "type": "integer",
+      "required": false
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "products"
+    },
+    "SalesDate": {
+      "type": "datetime"
+    },
+    "carts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::cart.cart",
+      "inversedBy": "products"
+    },
+    "linkimage": {
+      "type": "text"
+    },
+    "histories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::history.history",
+      "mappedBy": "products"
+    },
+    "history_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::history-item.history-item",
+      "mappedBy": "product"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

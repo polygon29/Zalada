@@ -1,0 +1,88 @@
+.contact-info-container {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: #446cb3;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.bgcontact {
+    padding: 20px;
+    background: linear-gradient(to bottom right, #363b00, #103b74, #1069a2, #3d078b);
+    background-attachment: scroll; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; 
+}
+
+.contact-item {
+    margin-bottom: 15px;
+}
+
+.contact-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+
+.contact-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    background-color: #ddd;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.typewriter {
+    overflow: hidden;
+    /* Ensures the text is not revealed until the animation */
+    border-right: .15em solid black;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    animation:
+        typing 8.0s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
